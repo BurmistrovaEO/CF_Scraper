@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Codeforces_parsed</string>
+    <string name="contests">Contests :</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="integrate_with_google_calendar">Integrate with Google Calendar</string>
+</resources>

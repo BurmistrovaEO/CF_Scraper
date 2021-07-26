@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        app:backgroundTint="@color/black"
+        app:icon="@drawable/ic_baseline_refresh_24"
+        app:iconTint="@android:color/darker_gray"
+        app:iconTintMode="src_in"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="189dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/contests"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:textAlignment="center"
+        app:backgroundTint="@color/black"
+        app:icon="@drawable/ic_baseline_settings_24"
+        app:iconTint="#FFC107"
+        app:iconTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="363dp"
+        android:layout_height="635dp"
+        tools:listitem="@layout/recyclerview_item"
+        android:padding="@dimen/big_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
