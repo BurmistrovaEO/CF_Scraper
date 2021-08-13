@@ -55,12 +55,14 @@
         android:id="@+id/recyclerview"
         android:layout_width="363dp"
         android:layout_height="635dp"
-        tools:listitem="@layout/recyclerview_item"
+        android:background="@color/cardview_dark_background"
         android:padding="@dimen/big_padding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906"
+        tools:listitem="@layout/recyclerview_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

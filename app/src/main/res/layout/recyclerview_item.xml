@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:paddingBottom="8dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nameView"
+        style="@style/contest_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light" />
+    <TextView
+        android:id="@+id/durView"
+        style="@style/contest_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light" />
+    <TextView
+        android:id="@+id/startView"
         style="@style/contest_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
